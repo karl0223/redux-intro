@@ -35,3 +35,13 @@ export default connect(mapStateToProps)(BalanceDisplay);
 check BalanceDisplay for the implementation
 
 ---------------------------
+
+# Middleware
+
+npm i redux-thunk
+
+check accountSlice deposite function implementation
+
+check all the changed files for the implementation
+
+---------------------------
