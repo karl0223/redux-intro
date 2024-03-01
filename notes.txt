@@ -1,15 +1,25 @@
-Install Redux
+# Install Redux
 
 npm i redux
 
 ---------------------------
 
-Connecting Redux App with React
+# Connecting Redux App with React
 
 npm i react-redux
+
+import { useSelector } from "react-redux"
 
 useSelector() --- used to get the data from store
 
 const customer = useSelector((store) => store.customer.fullName);
+
+---------------------------
+
+# Dispatching Actions
+
+import { useDispatch } from "react-redux"
+
+useDispatch()      --- used to dispatch 
 
 ---------------------------
