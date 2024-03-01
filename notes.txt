@@ -45,3 +45,19 @@ check accountSlice deposite function implementation
 check all the changed files for the implementation
 
 ---------------------------
+
+# Redux devtools
+
+npm i @redux-devtools/extension
+
+import { composeWithDevTools } from "@redux-devtools/extension";
+
+const store = createStore(
+  rootReducer,
+  composeWithDevTools(applyMiddleware(thunk))
+);
+
+-- Wrap the middleware with composeWithDevTools
+- check the dev tools in chrome to test the redux
+
+---------------------------
