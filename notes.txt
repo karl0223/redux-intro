@@ -61,3 +61,7 @@ const store = createStore(
 - check the dev tools in chrome to test the redux
 
 ---------------------------
+
+# Redux ToolKit
+
+npm i @reduxjs/toolkit
