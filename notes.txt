@@ -2,3 +2,14 @@ Install Redux
 
 npm i redux
 
+---------------------------
+
+Connecting Redux App with React
+
+npm i react-redux
+
+useSelector() --- used to get the data from store
+
+const customer = useSelector((store) => store.customer.fullName);
+
+---------------------------
