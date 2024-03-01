@@ -65,3 +65,36 @@ const store = createStore(
 # Redux ToolKit
 
 npm i @reduxjs/toolkit
+
+
+---------------------------
+
+# Refactoring Account Slice using Redux ToolKit
+
+import { createSlice } from "@reduxjs/toolkit";
+
+
+
+# To accept multiple arguements in action use 'prepare()'
+
+requestLoan: {
+    prepare(amount, purpose) {
+    return {
+        payload: {
+        amount,
+        purpose,
+        },
+    };
+    },
+
+    reducer(state, action) {
+    if (state.loan > 0) return;
+
+    state.loan = action.payload.amount;
+    state.loanPurpose = action.payload.purpose;
+    state.balance += action.payload.amount;
+    },
+},
+
+
+
