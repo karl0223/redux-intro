@@ -96,5 +96,19 @@ requestLoan: {
     },
 },
 
+---------------------------
 
+# Creating the Customer Slice
+
+-- Use 'prepare' if you are dealing with side effects like generating random ID, date, and etc
+
+prepare(fullName, nationalID) {
+        return {
+          payload: {
+            fullName,
+            nationalID,
+            createdAt: new Date().toISOString(),
+          },
+        };
+      },
 
