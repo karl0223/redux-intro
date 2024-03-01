@@ -23,3 +23,15 @@ import { useDispatch } from "react-redux"
 useDispatch()      --- used to dispatch 
 
 ---------------------------
+
+# Legacy way to connect components to Redux
+import { connect } from "react-redux";
+
+connect()
+
+export default connect(mapStateToProps)(BalanceDisplay);
+
+
+check BalanceDisplay for the implementation
+
+---------------------------
